@@ -48,7 +48,7 @@ public class MyApp extends Application
          }
 
          BorderPane root = new CardBorderPane();
-         Scene scene = new Scene(root);
+         Scene scene = new Scene(root,600,300);
          primaryStage.setTitle("Card Layout");
          primaryStage.setScene(scene);
          primaryStage.show();
