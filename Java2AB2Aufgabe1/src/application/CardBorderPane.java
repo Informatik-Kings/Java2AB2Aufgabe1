@@ -38,7 +38,6 @@ public class CardBorderPane extends BorderPane
        * Konstruktor für den EventHandler.
        *
        * @param stackPane Auf welcher Stackpane die Elemente gekoppelt werden sollen.
-       * @param label Label, welches den eigentlich Text beinhaltet.
        * @param text Text, welcher auf der Schicht angezeigt werden soll.
        */
       public Listener(StackPane stackPane, String text)
@@ -89,7 +88,7 @@ public class CardBorderPane extends BorderPane
 
    /**
     * 
-    * Erstellt ein das CardBorderPane mit drei Buttons und eigenen Handlern, welche durch Label wechseln.
+    * Erstellt ein das CardBorderPane mit drei Buttons und eigenen Handlern
     *
     */
    public CardBorderPane()
