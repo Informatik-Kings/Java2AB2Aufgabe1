@@ -41,12 +41,10 @@ public class CardBorderPane extends BorderPane
        * @param label Label, welches den eigentlich Text beinhaltet.
        * @param text Text, welcher auf der Schicht angezeigt werden soll.
        */
-      public Listener(StackPane stackPane, Label label, String text)
+      public Listener(StackPane stackPane, String text)
       {
          pane=stackPane;
-         this.label = label;
          this.text = text;
-
       }
 
       /**
@@ -100,21 +98,18 @@ public class CardBorderPane extends BorderPane
       StackPane stackPane = new StackPane();
 
       Button button1 = new Button("Button 1");
-      Label label1 = null;
-      Listener listener1 = new Listener(stackPane,label1,"Knopf 1");
+      Listener listener1 = new Listener(stackPane,"Knopf 1");
       button1.setOnAction(listener1);
       vbox.getChildren().add(button1);
       button1.fire(); //button1 wird gefeuert, damit das passende Label auf der Stackpane sichtbar ist.
 
       Button button2 = new Button("Button 2");
-      Label label2 = null;
-      Listener listener2 = new Listener(stackPane,label2,"Knopf 2");
+      Listener listener2 = new Listener(stackPane,"Knopf 2");
       button2.setOnAction(listener2);
       vbox.getChildren().add(button2);
 
       Button button3 = new Button("Button 3");
-      Label label3 = null;
-      Listener listener3 = new Listener(stackPane,label3,"Knopf 3");
+      Listener listener3 = new Listener(stackPane,"Knopf 3");
       button3.setOnAction(listener3);
       vbox.getChildren().add(button3);
 

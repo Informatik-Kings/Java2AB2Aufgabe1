@@ -17,7 +17,7 @@ import javafx.stage.Stage;
  *
  * @author Markus Suchalla, Cheng-Fu Ye, Dominik Schwabe
  */
-public class CardLayout extends Application
+public class Main extends Application
 {
 
    /**
@@ -42,7 +42,7 @@ public class CardLayout extends Application
       {
          if(primaryStage == null) 
          {
-            throw new NullPointerException("CardLayout.start(Stage primaryStage): Ungültige Null-Referenz zu PrimaryStage!");
+            throw new NullPointerException("Main.start(Stage primaryStage): Ungültige Null-Referenz zu PrimaryStage!");
          }
 
          BorderPane root = new CardBorderPane();
